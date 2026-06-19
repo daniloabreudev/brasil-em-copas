@@ -1,23 +1,38 @@
 @charset "UTF-8";
+:root{
+    --cor0: #002776;
+    --cor1: #009C3B;
+    --cor2: #FFFFFF;
+    --cor3: #FFDF00
+}
 
 @media screen and (min-width: 768px){
 span#burguer{
     display: none;
 }
 menu{
-    display: block;
+    display: !important;
 }
 menu > ul {
         display: flex;
-        justify-content: center; /* Centraliza o menu no cabeçalho */
-        background-color: rgb(89, 86, 86);
+        justify-content: center; 
+        background-color: var(--cor1);
     }
 
     menu > ul > li > a {
         border-top: none; 
-        padding: 10px 20px; 
+        padding: 14px 30px; 
+        background-color: transparent;
     }
-main{
-    width: 768px;
-}
+    menu > ul >li > a:hover{
+        background-color: var(--cor3);
+        color: var(--cor0);
+    }
+    main{
+        width: 768px;
+        padding: 30px;
+    }
+
+
+    
 }
