@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>A HISTÒRIA DA COPAS</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Copa de 1958</a></li>
+                <li><a href="#">Copa de 1962</a></li>
+                <li><a href="#">Copa de 1970</a></li>
+                <li><a href="#">Copa de 1994</a></li>
+                <li><a href="#">Copa de 2002</a></li>
+                
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Nasce o Maior Espetáculo da Terra!</h2>
+            <p>A Copa do Mundo de Futebol nasceu em 1930, fruto do sonho de um francês chamado Jules Rimet, que presidia a FIFA na época. A primeira edição foi realizada no Uruguai, reunindo apenas 13 seleções que viajaram dias de navio para competir. O país anfitrião sagrou-se o primeiro campeão mundial, dando início a uma tradição que, de quatro em quatro anos, para o planeta e une nações através da paixão pelo esporte.</p>
+
+            <h2>O Brasil e o nascimento do futebol arte</h2>
+            <p>Nenhuma seleção personifica tanto a essência das Copas quanto a brasileira. Único país a participar de todas as edições da história, o Brasil encantou o mundo em 1958 com o surgimento de Pelé, o Rei do Futebol, conquistando seu primeiro título na Suécia. O ápice do "futebol arte" veio em 1970, no México, com uma equipe considerada por muitos a maior de todos os tempos. Com cinco estrelas no peito, o país transformou o torneio em sua própria identidade cultural.</p>
+
+            <h2>Da era romântica ao show de Tecnologia</h2>
+            <p>Ao longo das décadas, a Copa do Mundo deixou de ser apenas um torneio de futebol para se transformar em um megaevento global bilionário. O espetáculo evoluiu de transmissões em preto e branco via rádio para exibições em ultra-definição via streaming. Hoje, o futebol divide o protagonismo com tecnologias de ponta, como o VAR e chips nas bolas, mas a essência continua exatamente a mesma de 1930: o drama, a emoção do gol e a busca pela glória eterna.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+
+        }
+    </script>
+</body>
+</html>
