@@ -56,7 +56,7 @@ menu > ul >li a{
     background-color: var(--cor1);
     color: var(--cor2);
     border-top: 1px solid rgba(255,255,255,0.2) ;
-    transition: background 0,2s;
+    transition: background 0.2s;
     
 }
 menu > ul >li a:hover{
@@ -100,12 +100,52 @@ article > p{
     text-indent: 20px;
     line-height: 1.6;
 }
-footer{
+footer {
     background-color: var(--cor1);
     color: var(--cor2);
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     font-size: 0.95rem;
     font-weight: bold;
     border-top: 3px solid var(--cor3);
+}
+
+footer p {
+    margin-bottom: 12px;
+}
+
+/* Alinha os botões lado a lado e centraliza no rodapé */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.icone-social {
+    width: 20px;
+    height: 20px;
+    fill: var(--cor2); 
+    transition: fill 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    background-color: var(--cor3); 
+    border-color: var(--cor3);
+    transform: translateY(-3px);
+}
+
+/* Efeito Hover específico para trocar a cor do ícone */
+.redes-sociais a:hover .icone-social {
+    fill: var(--cor0);
 }

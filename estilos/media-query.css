@@ -8,10 +8,10 @@
 
 @media screen and (min-width: 768px){
 span#burguer{
-    display: none;
+    display: none !important;
 }
-menu{
-    display: !important;
+menu, #itens{
+    display:block !important;
 }
 menu > ul {
         display: flex;
