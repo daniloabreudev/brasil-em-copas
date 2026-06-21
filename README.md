@@ -5,7 +5,7 @@
 
 Hotsite responsivo e dinâmico que celebra as cinco páginas de ouro do futebol brasileiro: as edições históricas da Copa do Mundo em que a Seleção Canarinho conquistou o topo do mundo. Projeto focado no desenvolvimento de layouts adaptáveis, semântica limpa e interatividade mobile.
 
-🔗 **[Clique aqui para ver o projeto ao vivo](https://daniloabreudev.github.io/brasil-em-copas/)**
+🔗 **[Clique aqui para ver o projeto ](https://daniloabreudev.github.io/brasil-em-copas/)**
 
 ---
 
